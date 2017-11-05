@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.fbla.jonat.e_parc.MapsActivity" />
+
+    <Button
+        android:id="@+id/recommended"
+        android:layout_width="360px"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:alpha="1"
+        android:onClick="recommended"
+        android:background="#3F51B5"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Recommended"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/friends"
+        android:layout_width="360px"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:alpha="1"
+        android:onClick="friends"
+        android:background="#3F51B5"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Friends"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="195px"
+        android:layout_height="220px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:alpha="1"
+        android:onClick="userLocation"
+        android:background="@drawable/locationmarker"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
